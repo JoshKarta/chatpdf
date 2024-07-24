@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkLoaded, ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 
@@ -26,8 +26,11 @@ export default function RootLayout({
         )}
       >
         <ClerkProvider>
-          <Header />
-          {children}
+          <ClerkLoaded>
+
+            <Header />
+            {children}
+          </ClerkLoaded>
         </ClerkProvider>
       </body>
     </html>
