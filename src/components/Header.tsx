@@ -9,7 +9,6 @@ import { FilePlus2 } from "lucide-react";
 
 export default function Header() {
   const pathname = usePathname()
-  console.log(pathname)
   return (
     <div className="border-b backdrop-blur-md shadow-sm fixed top-0 z-50 w-full">
       <div className="max-w-7xl mx-auto p-4 flex items-center justify-between">
