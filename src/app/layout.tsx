@@ -22,11 +22,11 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "min-h-screen h-screen flex flex-col"
+          "min-h-screen h-screen flex flex-col relative"
         )}
       >
         <ClerkProvider>
-          {/* <Header /> */}
+          <Header />
           {children}
         </ClerkProvider>
       </body>
