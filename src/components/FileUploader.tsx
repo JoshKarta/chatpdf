@@ -26,7 +26,7 @@ export default function FileUploader() {
                             :
                             <>
                                 <CircleArrowDown className='h-10 w-10' />
-                                <p className='text-center'>Drag 'n' drop some files here, or click to select files</p>
+                                <p className='text-center'>Drag &apos;n&apos; drop some files here, or click to select files</p>
                             </>
                     }
                 </div>
